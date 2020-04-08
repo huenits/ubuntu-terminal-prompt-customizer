@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+html, body {
+  background-color: whitesmoke;
+}
+
+#app {
+  margin-top: 80px;
+}
+
+#terminal {
+  background-color: #2e021f;
+  height: 300px;
+  width: 500px;
+}
+#terminal * {
+  font-family: monospace;
+}
+
+.text-magenta {
+  color: magenta;
+}

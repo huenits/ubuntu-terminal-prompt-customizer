@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ubuntu Terminal Prompt Customizer | Huenits</title>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin="">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+  <link href="https://stackpath.bootstrapcdn.com" rel="preconnect" crossorigin="">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <style>
-    html, body {
-      background-color: whitesmoke;
-    }
-    #app {
-      margin-top: 60px;
-    }
-  </style>
+  <link rel="stylesheet" href="./main.css">
+
 </head>
 <body>
 
@@ -21,8 +20,35 @@
   </nav>
 
   <div class="container" id="app">
-    <h1 class="h4">{{title}}</h1>
-    <p>Here's a quick demo of VueJS</p>
+    <h1 class="h4 text-center mb-4">{{title}}</h1>
+
+
+    <div class="d-flex flex-wrap justify-content-md-center">
+
+      <div class="p-2">
+        <h2 class="h5">Customize it!</h2>
+      </div>
+
+      <div id="terminal" class="d-block text-white p-2 ml-md-4">
+        <strong>
+          <span id="pu-t-user" class="text-warning">huenisys</span><span class="pu-t-@-symbol text-white">†</span><span id="pu-t-host" class="text-danger">pc</span>:<span id="pu-t-pwd" class="text-primary">~/proj/vue</span> <span class="text-magenta">(master)</span>
+        </strong><br>
+        <strong>
+          <span class="text-success">$</span> ls -la
+        </strong><br>
+        <div class="small">
+total 24<br>
+drwxrwxr-x  3&nbsp; huenisys huenisys 4096 Apr  9 00:55 .<br>
+drwxr-xr-x 11 huenisys huenisys 4096 Apr  8 22:30 ..<br>
+drwxrwxr-x  8&nbsp; huenisys huenisys 4096 Apr  9 00:19 <span class="text-primary">.git</span><br>
+-rw-rw-r--  1&nbsp; huenisys huenisys 2439 Apr  9 01:01 index.html<br>
+-rw-rw-r--  1&nbsp; huenisys huenisys  360 Apr  9 01:00 main.css<br>
+-rw-rw-r--  1&nbsp; huenisys huenisys   50 Apr  9 00:20 readme.md<br>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
