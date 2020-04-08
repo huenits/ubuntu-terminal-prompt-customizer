@@ -12,6 +12,7 @@ html, body {
   background-color: #2e021f;
   height: 300px;
   width: 500px;
+  margin: 0 auto;
 }
 #terminal * {
   font-family: monospace;
@@ -19,6 +20,12 @@ html, body {
 
 .text-magenta {
   color: magenta;
+}
+
+.btn-magenta {
+    color: #fff;
+    background-color: magenta;
+    border-color: magenta;
 }
 
 pre{
