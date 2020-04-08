@@ -20,3 +20,7 @@ html, body {
 .text-magenta {
   color: magenta;
 }
+
+pre{
+    white-space: pre-wrap;
+}
